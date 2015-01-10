@@ -7,6 +7,7 @@ include("includes/connect.php");
 <html lang="en">
 <head>
 	<title>Register</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div id="wrapper">

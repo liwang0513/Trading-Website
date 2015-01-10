@@ -1,6 +1,6 @@
 <?php
 $connect = mysql_connect('localhost','bucky_name','TSXG9GJWNn96pba5');
-
+if (!$connect) {
 	die('Could not connect '.mysql_error());
 }
 
