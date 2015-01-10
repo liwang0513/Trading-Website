@@ -18,3 +18,38 @@ header,nav,section,aside,footer {
 img {
 	border: none;
 }
+
+h2 { /*dark grey titles*/
+	font-family: Arial;
+	font-size: 14px;
+	color: #404040;
+}
+
+h3 { /*For titles*/
+	margin-bottom: 15px;
+	font-size: 22px;
+	color: white;
+	text-shadow: 1px 1px 3px #080808;
+}
+
+h4 {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	color: #606060;
+}
+
+h5 { /*address prompt*/
+	text-align: center;
+	font-family: Arial;
+	font-size: 14px;
+	color: #404040;
+}
+
+h6 { /*address in shipping info*/
+	text-align: center;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	color: #606060;
+}
