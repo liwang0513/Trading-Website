@@ -27,6 +27,16 @@ function headerAndSearcgCode() {
 			</form>
 			</div>
 	';
-} 	
+}
+
+//Top Right Links
+function topRightLinks() {
+	if ( !isset($_SESSION['user_id']) ) {
+		echo '<a href="register.php">Register</a> | <a href="login.php">Log In</a>';
+	} else {
+		$x = $_SESSION['user_id'];
+		$result = mysql_query("SELECT * FROM messages WHERE receive=$x AND status='unread'") or die(mysql_error());
+	}
+}
 	
 ?>
