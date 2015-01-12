@@ -53,3 +53,38 @@ h6 { /*address in shipping info*/
 	font-weight: normal;
 	color: #606060;
 }
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+th {
+	color: #888888;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+td {
+	padding: 3px 10px;
+}
+
+a:link {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CC6600;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #CC6600;
+	text-decoration: underline;
+}
