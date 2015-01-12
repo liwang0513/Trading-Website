@@ -36,6 +36,14 @@ function topRightLinks() {
 	} else {
 		$x = $_SESSION['user_id'];
 		$result = mysql_query("SELECT * FROM messages WHERE receive=$x AND status='unread'") or die(mysql_error());
+		$num = mysql_num_rows($result);
+		if ($num == 0) {
+			echo '<a href="messages_inbox.php">Messages</a>';
+		} else {
+			echo "<span class=\"usernames\"><a href=\"messages_inbox.php\">Messages($num)</a></span> |"
+		}
+		
+		echo '<a href="additem.php">Add Item</a> | <a href="account.php">My Acoount</a> | <a href="logout.php">Log Out</a>'
 	}
 }
 	
