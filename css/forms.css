@@ -67,3 +67,25 @@ label {
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
 }
+
+.input {
+	font-size: 15px;
+	padding: 5px;
+	border: 1px solid #b9bdc1;
+	width: 500px;
+	color: #505050;
+}
+
+.input:focus {
+	background-color: white;
+}
+
+.textarea {
+	font-family: Arial;
+	height: 150px;
+	width: 500px;
+	font-size: 15px;
+	padding: 5px;
+	border: 1px solid #b9bdc1;
+	color: #505050;
+}
