@@ -8,7 +8,8 @@ function headerAndSearcgCode() {
 			<div id="rightAlign">
 	';
 	
-	//Links will be here
+	topRightLinks();
+		
 	echo "
 			</div>
 			<a href=\"index.php\"><img src=\"images/mainLogo.png\"></a>
@@ -19,7 +20,7 @@ function headerAndSearcgCode() {
 				<select id=\"category\" name=\"category\" class=\"searchBox\">
 	";
 	
-	//include categories here
+	createCategoryList();
 	
 	echo '
 				</select>
@@ -44,6 +45,15 @@ function topRightLinks() {
 		}
 		
 		echo '<a href="additem.php">Add Item</a> | <a href="account.php">My Acoount</a> | <a href="logout.php">Log Out</a>'
+	}
+}
+
+//Create Category for search Bar
+function createCategoryList() {
+	if (ctype_digit($_GET['category'])) {
+		$x = $GET['category'];
+	} else {
+		$x = 999;
 	}
 }
 	
