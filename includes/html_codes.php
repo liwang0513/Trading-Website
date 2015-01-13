@@ -1,7 +1,8 @@
 <?php
 //Code for Header and Search Bar
-function headerAndSearcgCode() {
-	$defaultText = htmlentities($_GET['keywords']);
+function headerAndSearchCode() {
+	//$defaultText = htmlentities($_GET['keywords']);
+	$defaultText = "keywords";
 	
 	echo '
 		<header id="main_header">
@@ -41,10 +42,10 @@ function topRightLinks() {
 		if ($num == 0) {
 			echo '<a href="messages_inbox.php">Messages</a>';
 		} else {
-			echo "<span class=\"usernames\"><a href=\"messages_inbox.php\">Messages($num)</a></span> |"
+			echo "<span class=\"usernames\"><a href=\"messages_inbox.php\">Messages($num)</a></span> |";
 		}
 		
-		echo '<a href="additem.php">Add Item</a> | <a href="account.php">My Acoount</a> | <a href="logout.php">Log Out</a>'
+		echo '<a href="additem.php">Add Item</a> | <a href="account.php">My Acoount</a> | <a href="logout.php">Log Out</a>';
 	}
 }
 
@@ -89,6 +90,8 @@ function numberToCategory($n) {
 		default:
 			$cat = "Category Does Not Exist";
 	}
+	
+	return $cat;
 }
 	
 ?>

@@ -14,6 +14,7 @@ include("includes/html_codes.php");
 </head>
 <body>
 	<div id="wrapper">
+		<?php headerAndSearchCode(); ?>
 		<aside id="left_side">
 		</aside>
 		<section id="right_side">
