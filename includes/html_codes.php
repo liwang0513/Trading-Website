@@ -55,6 +55,40 @@ function createCategoryList() {
 	} else {
 		$x = 999;
 	}
+	echo "<option>All Categories</option>";
+	$i = 0;
+	while (1) {
+		if (numberToCategory($i) == "Category Does Not Exist") {
+			break;
+		} else {
+			echo " <option value=\"$i\" ";
+			if ($i == $x) {
+				echo ' SELECTED ';
+			}
+			echo " > ";
+			echo numberToCategory($i);
+			echo "</option>";
+		}
+		$i++;
+	}
+	
+}
+
+//Get categories name
+function numberToCategory($n) {
+	switch($n) {
+		case 0:
+			$cat = "Antiques";
+			break;
+		case 1:
+			$cate = "Art";
+			break;
+		case 2:
+			$cat = "Automotive";
+			break;
+		default:
+			$cat = "Category Does Not Exist";
+	}
 }
 	
 ?>
